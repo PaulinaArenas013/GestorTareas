@@ -14,7 +14,6 @@ document.getElementById("task-form").addEventListener("submit", (e) => {
         //Limpiar el input
         document.getElementById("task-input").value = "";
     }
-
     });
 
     //Agregar el evento para los botones de las tareas

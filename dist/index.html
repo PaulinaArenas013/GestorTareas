@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestor de tareas</title>
     <link rel="stylesheet" href="../src/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@26,400,0,0" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Paytone+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+    </style>
 </head>
 <body>
     <div id="app">
-        <h1>Gestor de tareas</h1>
+        <h1><span class="material-symbols-outlined">emoji_food_beverage</span>Gestor de tareas</h1>
         <form id="task-form">
             <input type="text" id="task-input" placeholder="Agrega una nueva tarea">
-            <button type="submit">Agregar</button>
+            <button class="btn10" type="submit">
+                <span>Agregar</span>
+                <div class="transition"></div>
+            </button>
         </form>
         <ul id="task-list"></ul>
     </div>

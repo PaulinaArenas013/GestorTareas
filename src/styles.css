@@ -1,6 +1,7 @@
 /*Estilos generales*/
 body{
-    font-family: Arial, sans-serif;
+    font-family: "Comfortaa", sans-serif;
+    font-style: bold;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -8,11 +9,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("./img/Fondo10.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*Estilos para el contenedor principal*/
 #app{
-    background-color: white;
+    background-color: rgba(115, 255, 171, 0.4);
+    opacity: 0.9;   
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -25,19 +30,131 @@ form{
 /*Estilos al input*/
 input{
     width: 75%;
-    padding: 8px;
+    height: 50px;
     margin-right: 10px;
+    margin-top: 35px;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 50px;
+    text-align: center;
+
 }
+input::placeholder {
+    text-align: center;
+  }
 /*Estilos al boton*/
 button{
     padding: 5px 8px;
-    background-color: #007bff;
-    color: white;
+    background-color: #006c60;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    color: #fff;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.btn10{
+  padding: 15px 100px;
+  margin-bottom: 50px;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display:inline-block;
+  
+}
+/* Btn 10  */
+.btn10{
+    top: 40px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase!important;
+    letter-spacing: 2px;
+    color: #ffffff;
+    cursor: hand;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #00b081;
+    border-radius:50px;
+    position: relative;
+    overflow: hidden!important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: #00b081 !important;
+    z-index:10;
+}
+.btn10:hover{
+    border: 1px solid #e097e4;
+    color: #ffffff!important;
+}
+.btn10::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #e097e4;
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+     box-shadow:2px 0px 14px rgba(0,0,0,.6);
+  } 
+
+.btn10::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #b987ff;
+    position: absolute;
+  -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+    -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+.btn10:hover::before, .btn1O:hover::before{
+  opacity:1;
+  width: 116%;
+}
+.btn10:hover::after, .btn1O:hover::after{
+  opacity:1;
+  width: 120%;
+}
+.transition{
+    position: absolute;
+    top: -10%;
+    left: 0%;
+    width: 100%;
+    height: 0%;
+    background: #80ffd3;
+    z-index:-1;
 }
 /*Estilos para la lista*/
 ul{
@@ -46,9 +163,10 @@ ul{
 }
 /*Estilos para cada elemento de la lista*/
 li{
-    background-color: #f4f4f4;
+    background-color: rgba(255, 175, 236, 0.6);
     padding: 10px;
     border: 1px solid #ddd;
+    border-radius: 25px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
